@@ -2,13 +2,8 @@ import streamlit as st
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 from PIL import Image
 from ultralytics import YOLO
+import cv
 
-# Load YOLO model
-# model = YOLO(r'C:\Users\HP\OneDrive - softsensor.ai\pvr\weights\best.pt')
-# model = YOLO(r'C:\Users\HP\OneDrive - softsensor.ai\pvr\weights\dhariya.pt')
-# model = YOLO(r'C:\Users\HP\OneDrive - softsensor.ai\pvr\weights\model_120624.pt')
-# model = YOLO(r'C:\Users\HP\OneDrive - softsensor.ai\pvr\weights\model_140624.pt')
-# model = YOLO(r'C:\Users\HP\OneDrive - softsensor.ai\pvr\weights\greet_yawn_helmet_smoke_mask.pt')
 model = YOLO(r'model\new_model_18072024.pt')
 
 class YOLOVideoTransformer(VideoTransformerBase):
